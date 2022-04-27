@@ -26,20 +26,20 @@ def check_for_winner(board, player):
     print(board[0][0], board[0][1], board[0][2])
     if (board[0][0] == player and board[0][1] == player and board[0][2]== player):
         return True
-    # elif ((board[1][0] and board[1][1] and board[1][2])== player):
-    #     return True
-    # elif ((board[2][0] and board[2][1] and board[2][2])== player):
-    #     return True
-    # elif ((board[0][0] and board[1][0] and board[2][0])== player):
-    #     return True
-    # elif ((board[0][1] and board[1][1] and board[2][1])== player):
-    #     return True
-    # elif ((board[0][2] and board[1][2] and board[2][2])== player):
-    #     return True
-    # elif ((board[0][0] and board[1][1] and board[2][2])== player):
-    #     return True
-    # elif ((board[0][2] and board[1][1] and board[2][0])== player):
-    #     return True
+    elif (board[1][0] == player and board[1][1] == player and board[1][2]== player):
+        return True
+    elif (board[2][0]== player and board[2][1]== player and board[2][2]== player):
+        return True
+    elif (board[0][0] == player and board[1][0] == player and board[2][0]== player):
+        return True
+    elif (board[0][1] == player and board[1][1] == player and board[2][1]== player):
+        return True
+    elif (board[0][2] == player and board[1][2] == player and board[2][2]== player):
+        return True
+    elif (board[0][0] == player and board[1][1] == player and board[2][2]== player):
+        return True
+    elif (board[0][2] == player and board[1][1] == player and board[2][0]== player):
+        return True
     else:
         return False
 
