@@ -23,7 +23,6 @@ def update_board(board, position, player):
     return board
 
 def check_for_winner(board, player):
-    print(board[0][0], board[0][1], board[0][2])
     if (board[0][0] == player and board[0][1] == player and board[0][2]== player):
         return True
     elif (board[1][0] == player and board[1][1] == player and board[1][2]== player):
@@ -48,8 +47,8 @@ Testing:
 '''
 board = create_empty_board()
 print_board(board)
-update_board(board, [0, 1], "X")
-update_board(board, [0, 0], "0")
+update_board(board, [1, 1], "0")
 update_board(board, [0, 2], "X")
+update_board(board, [2, 0], "X")
 print_board(board)
 print(check_for_winner(board, "X"))
